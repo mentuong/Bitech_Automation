@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="2">
+    <!--    <test name="Bitech_Automation/Chrome" >-->
+    <!--        <parameter name="browser" value="Chrome"/>-->
+    <!--        <parameter name="url" value="http://192.168.1.80:5000/admin"/>-->
+    <!--        <classes>-->
+    <!--            <class name="test.TuyenSinh.GvNhapDiemOffline">-->
+    <!--                <methods>-->
+    <!--                    <include name="testAdminSuaDiem"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test name="Bitech_Automation/Firefox">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="url" value="https://thuvienso.bitechco.link/"/>
+        <classes>
+            <class name="test.Blib.test01Login"></class>
+        </classes>
+    </test>
+</suite>
